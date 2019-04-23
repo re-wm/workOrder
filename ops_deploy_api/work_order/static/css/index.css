@@ -1,0 +1,28 @@
+
+.avatar_img,.desc{
+         float: left;
+     }
+
+    .info .timer{
+
+        color: darkgray;
+    }
+    .info{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .desc{
+        font-size: 14px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+
+
+    .hiden{
+        display: none;
+    }
+
+
+    .site{
+        margin-top: 30px;
+    }

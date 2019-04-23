@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
+    <title>工单系统首页</title>
+    <link rel="stylesheet" href="/static/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <script src="/static/js/jquery-3.1.1.js"></script>
+    <script src="/static/bs/js/bootstrap.js"></script>
+
+    <style>
+        body {
+            font-size: .875rem;
+        }
+
+        .feather {
+            width: 16px;
+            height: 16px;
+            vertical-align: text-bottom;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 0;
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+        }
+
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 48px;
+            height: calc(100vh - 48px);
+            padding-top: .5rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .sidebar .nav-link {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .sidebar .nav-link .feather {
+            margin-right: 4px;
+            color: #999;
+        }
+
+        .sidebar .nav-link.active {
+            color: #007bff;
+        }
+
+        .sidebar .nav-link:hover .feather, .sidebar .nav-link.active .feather {
+            color: inherit;
+        }
+
+        .sidebar-heading {
+            font-size: .75rem;
+            text-transform: uppercase;
+        }
+
+        .navbar-brand {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: 1rem;
+            background-color: rgba(0, 0, 0, .25);
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+        }
+
+        .navbar .form-control {
+            padding: .75rem 1rem;
+            border-width: 0;
+            border-radius: 0;
+        }
+
+        .form-control-dark {
+            color: #fff;
+            background-color: rgba(255, 255, 255, .1);
+            border-color: rgba(255, 255, 255, .1);
+        }
+    </style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header" style="font-size: 18px;margin-top: 12px;color: seashell">
+            <span class="glyphicon glyphicon-home"></span> 工单系统首页 </li>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;" style="font-size: 14px" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> 在线运维人员 </a></li>
+                <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" style="width: 30%">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel"><span><<</span>今日当值<span>>></span></h4>
+                        </div>
+
+                        <div class="modal-body" style="font-size: 14px;font-weight: bold">白班运维：&nbsp;
+                        {% for li_name in li %}
+                            <span style="color: #67b168">
+                                {{ li_name.0 }} ,&nbsp;
+                            </span>
+                        {% empty %}
+                            <span style="color: #ce8483;font-weight: normal">   =>请联系管理员预设今日当值人员<=</span>
+                        {% endfor %}
+                        </div>
+
+                        <div class="modal-body" style="font-size: 14px;font-weight: bold">夜班运维：&nbsp;
+                        {% for li2_name in li2 %}
+                            <span style="color: #c0a16b">
+                                {{ li2_name.0 }}
+                            </span>
+                        {% empty %}
+                            <span style="color: #ce8483;font-weight: normal">   =>请联系管理员预设今日当值人员<=</span>
+                        {% endfor %}
+                        </div>
+
+                        <hr>
+{#                        <div class="modal-footer">#}
+{#                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>#}
+{#                            <button type="button" class="btn btn-primary">提交更改</button>#}
+{#                        </div>#}
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div><!-- /.end -->
+            <li><a href="/logout/" style="font-size: 14px"><span class="glyphicon glyphicon-log-in"></span> 退出 </a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <h4 class="sidebar-heading">
+                        <a class="d-flex align-items-center text-muted" style="font-size: 15px;font-weight:bold;color: darkolivegreen;text-decoration: none" href="javascript:;">
+                            &nbsp;<span class="glyphicon glyphicon-tag"></span>工单系统 <span class="glyphicon glyphicon-tag"></span>
+                        </a>
+                    </h4>
+                    {#                    <li class="nav-item">#}
+                    {#                        <a class="nav-link" href="#">#}
+                    {#                            <span data-feather="file"></span>#}
+                    {#                            新建工单#}
+                    {#                        </a>#}
+                    {#                    </li>#}
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px;">
+{#                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"#}
+{#                                aria-haspopup="true" aria-expanded="false">#}
+                            <a type="button" class="btn btn-success" style="color: white;text-decoration: none" href="/order_list/">新建工单</a>
+{#                        </button>#}
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+{#                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"#}
+{#                                aria-haspopup="true" aria-expanded="false">#}
+                            <a type="button" class="btn btn-success" style="color: white;text-decoration: none" href="/order_list/">编辑工单</a>
+{#                        </button>#}
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+{#                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"#}
+{#                                aria-haspopup="true" aria-expanded="false">#}
+                            <a type="button" class="btn btn-success" style="color: white;text-decoration: none" href="/order_list/">删除工单</a>
+{#                        </button>#}
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+{#                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"#}
+{#                                aria-haspopup="true" aria-expanded="false">#}
+                            <a type="button" class="btn btn-success" style="color: white;text-decoration: none" href="/ops_order/">我处理的全部工单</a>
+{#                        </button>#}
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+{#                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"#}
+{#                                aria-haspopup="true" aria-expanded="false">#}
+                            <a type="button" class="btn btn-success" style="color: white;text-decoration: none" href="/no_order_ops/">未处理工单</a>
+{#                        </button>#}
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+{#                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"#}
+{#                                aria-haspopup="true" aria-expanded="false">#}
+                            <a type="button" class="btn btn-success" style="color: white;text-decoration: none" href="/yes_order_ops/">已处理工单</a>
+{#                        </button>#}
+                    </div>
+                    <br>
+                </ul>
+                <h4 class="sidebar-heading">
+                    <a class="d-flex align-items-center text-muted" style="font-size: 15px;font-weight:bold;color: darkolivegreen;cursor:pointer;text-decoration: none">
+                        &nbsp;<span class="glyphicon glyphicon-tag"></span> 管理后台 <span class="glyphicon glyphicon-tag"></span>
+                    </a>
+                </h4>
+                <ul class="nav flex-column mb-2">
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px;">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">用户管理
+                        </button>
+                        <div class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user_list/">添加用户</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user_list/">编辑用户</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user_list/">删除用户</a>
+                            </li>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">分组管理</a>
+                        </button>
+                        <div class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/group_list/">添加分组</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/group_list/">编辑分组</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/group_list/">删除分组</a>
+                            </li>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-group" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">公司管理</a>
+                        </button>
+                        <div class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/company_list/">添加公司</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/company_list/">编辑公司</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/company_list/">删除公司</a>
+                            </li>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px">
+                        <button type="button" class="btn btn-success">
+                            <a style="color: white;text-decoration: none;color: #faebcc" href="/ops_on/">当值运维</a>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8" style="left: 450px;top: 10px">
+            <form class="form-inline mb-2" action="/index/" method="POST">
+                <div class="form-group mb-2">
+                    <label for="order" class="sr-only">order</label>
+                    <input type="text" class="form-control" id="order" name="order" placeholder="工单ID">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="username" class="sr-only">username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="用户名">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="company" class="sr-only">company</label>
+                    <input type="text" class="form-control" id="company" name="company" placeholder="公司名">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="group" class="sr-only">group</label>
+                    <input type="text" class="form-control" id="group" name="group" placeholder="分组名">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" style="width: 170px;margin-left: 10px">查询</button>
+
+            </form>
+        </div>
+        <!-- 渲染查询页面开始 -->
+        <div class="col-md-5" style="left: 450px;margin-top: 50px;width: 1160px">
+            {% if sub_name %}
+            <table class="table table-bordered table-striped" style="width: 1160px">
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>标题</th>
+                    <th>发版地址</th>
+                    <th>发版内容</th>
+                    <th>发版注意</th>
+                    <th>备注</th>
+                    <th>状态</th>
+                    <th>是否更db</th>
+                    <th>创建时间</th>
+                    <th>结束时间</th>
+                    <th>接单运维</th>
+
+                    <th>公司</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for i in sub_order_l %}
+                        <tr>
+                            <th scope="row">{{ i.0 }}</th>
+                            <td>{{ i.1 }}</td>
+                            <td>{{ i.2 }}</td>
+                            <td>{{ i.3 }}</td>
+                            <td>{{ i.4 }}</td>
+                            <td>{{ i.5 }}</td>
+                            <td>{{ i.6 }}</td>
+                            <td>{{ i.7 }}</td>
+                            <td>{{ i.8 | date:"Y-m-d h:i:s" }}</td>
+                            <td>{{ i.9 | date:"Y-m-d h:i:s"}}</td>
+                            <td>{{ i.10 }}</td>
+                            <td>{{ i.11 }}</td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="3" style="text-align: center;font-size: 14px">没有数据，欧耶~~~ 选择"一项"进行《查询》吧！......</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <table class="table table-bordered table-striped" style="width: 1160px">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;font-size: 18px;font-weight: bold;color: #1b6d85;">【 你懂的:操作指南^~ 】</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align: center;font-size: 16px;font-weight: bold;color: #419641">{{ rep }}</th>
+{#                            <td>{{ i.1 }}</td>#}
+                        </tr>
+{#                        <tr>#}
+{#                            <td colspan="3" style="text-align: center;font-size: 14px">没有数据，欧耶~~~ 选择"一项"进行《查询》吧！......</td>#}
+{#                        </tr>#}
+                </tbody>
+            </table>
+            {% endif %}
+            <!-- 渲染查询页面结束 -->
+            <div class="row"> <!-- 页码开始 -->
+                <div class="col-md-7 col-xs-12 pull-right">
+                    <nav aria-label="...">
+                        <ul class=" pull-right pagination">
+                            <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- 页码结束 -->
+        </div> <!-- 右部下半部分 -->
+
+    </div>
+</div>
+
+</body>
+</html>

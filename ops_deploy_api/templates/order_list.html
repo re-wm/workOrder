@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工单系统首页</title>
+    <link rel="stylesheet" href="/static/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/bs/css/daterangepicker.css">
+    <script src="/static/js/jquery-3.1.1.js"></script>
+    <script src="/static/bs/js/bootstrap.js"></script>
+    <script src="/static/bs/js/moment.min.js"></script>
+    <script src="/static/bs/js/daterangepicker.js"></script>
+
+    <style>
+        body {
+            font-size: .875rem;
+        }
+
+        .feather {
+            width: 16px;
+            height: 16px;
+            vertical-align: text-bottom;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 0;
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+        }
+
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 48px;
+            height: calc(100vh - 48px);
+            padding-top: .5rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .sidebar .nav-link {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .sidebar .nav-link .feather {
+            margin-right: 4px;
+            color: #999;
+        }
+
+        .sidebar .nav-link.active {
+            color: #007bff;
+        }
+
+        .sidebar .nav-link:hover .feather, .sidebar .nav-link.active .feather {
+            color: inherit;
+        }
+
+        .sidebar-heading {
+            font-size: .75rem;
+            text-transform: uppercase;
+        }
+
+        .navbar-brand {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: 1rem;
+            background-color: rgba(0, 0, 0, .25);
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+        }
+
+        .navbar .form-control {
+            padding: .75rem 1rem;
+            border-width: 0;
+            border-radius: 0;
+        }
+
+        .form-control-dark {
+            color: #fff;
+            background-color: rgba(255, 255, 255, .1);
+            border-color: rgba(255, 255, 255, .1);
+        }
+    </style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header" style="font-size: 18px;margin-top: 12px;color: seashell">
+            <span class="glyphicon glyphicon-home"></span> 工单系统首页 </li>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;" style="font-size: 14px" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> 在线运维人员 </a></li>
+                <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" style="width: 30%">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel"><span><<</span>今日当值<span>>></span></h4>
+                        </div>
+
+                        <div class="modal-body" style="font-size: 14px;font-weight: bold">白班运维：&nbsp;
+                        {% for li_name in li %}
+                            <span style="color: #67b168">
+                                {{ li_name.0 }} ,&nbsp;
+                            </span>
+                        {% empty %}
+                            <span style="color: #ce8483;font-weight: normal">   =>请联系管理员预设今日当值人员<=</span>
+                        {% endfor %}
+                        </div>
+
+                        <div class="modal-body" style="font-size: 14px;font-weight: bold">夜班运维：&nbsp;
+                        {% for li2_name in li2 %}
+                            <span style="color: #c0a16b">
+                                {{ li2_name.0 }}
+                            </span>
+                        {% empty %}
+                            <span style="color: #ce8483;font-weight: normal">   =>请联系管理员预设今日当值人员<=</span>
+                        {% endfor %}
+                        </div>
+                        <hr>
+{#                        <div class="modal-footer">#}
+{#                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>#}
+{#                            <button type="button" class="btn btn-primary">提交更改</button>#}
+{#                        </div>#}
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div><!-- /.end -->
+            <li><a href="/logout/" style="font-size: 14px"><span class="glyphicon glyphicon-log-in"></span> 退出 </a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <h4 class="sidebar-heading">
+                        <a class="d-flex align-items-center text-muted" style="font-size: 16px;color: darkolivegreen;text-decoration: none" href="javascript:;">
+                            <span class="glyphicon glyphicon-triangle-left"></span>工单系统 <span class="glyphicon glyphicon-hand-right"></span>
+                        </a>
+                    </h4>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px;">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a href="#" style="color: white;text-decoration: none" onclick="window.location='/order_list/'">新建工单</a>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a href="#" style="color: white;text-decoration: none" onclick="window.location='/order_list/'">编辑工单</a>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a href="#" style="color: white;text-decoration: none" onclick="window.location='/order_list/'">删除工单</a>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">我提交的全部工单</a>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">我处理的全部工单</a>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">未处理工单</a>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">已处理工单</a>
+                        </button>
+                    </div>
+                    <br>
+                </ul>
+                <h4 class="sidebar-heading">
+                    <a class="d-flex align-items-center text-muted" style="font-size: 16px;color: darkolivegreen;text-decoration: none" href="javascript:;">
+                        <span class="glyphicon glyphicon-triangle-left"></span>管理后台 <span class="glyphicon glyphicon-hand-right"></span>
+                    </a>
+                </h4>
+                <ul class="nav flex-column mb-2">
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px;">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">用户管理
+                        </button>
+                        <div class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user_list/">添加用户</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user_list/">编辑用户</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user_list/">删除用户</a>
+                            </li>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px;margin-bottom: 2px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">分组管理</a>
+                        </button>
+                        <div class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/group_list/">添加分组</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/group_list/">编辑分组</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/group_list/">删除分组</a>
+                            </li>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-group dropright" style="left: 50px">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white;text-decoration: none" href="#">公司管理</a>
+                        </button>
+                        <div class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/company_list/">添加公司</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/company_list/">编辑公司</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/company_list/">删除公司</a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8" style="left: 350px;top: 10px;width: 1200px">
+            <form class="form-inline mb-2" method="POST" action="/add_order/">
+                <div class="form-group mb-2" style="margin-right: 30px">
+                    <label for="title" class="sr-only">title</label>
+                    <input type="text" name="title" class="form-control" id="title" placeholder="标题">
+                </div>
+                <div class="form-group mb-2" style="margin-right: 30px;">
+                    <label for="address" class="sr-only">address</label>
+                    <input type="text" name="address" class="form-control" id="address" placeholder="发版地址">
+                </div>
+                <div class="form-group mb-2" style="margin-right: 30px">
+                    <label for="content" class="sr-only">content</label>
+                    <input type="text" name="content" class="form-control" id="content" placeholder="发版内容">
+                </div>
+                <div class="form-group mb-2" style="margin-right: 30px">
+                    <label for="attention" class="sr-only">attention</label>
+                    <input type="text" name="attention" class="form-control" id="attention" placeholder="发版注意">
+                </div>
+                <div class="form-group mb-2" style="margin-right: 30px">
+                    <label for="remark" class="sr-only">remark</label>
+                    <input type="text" name="remark" class="form-control" id="remark" placeholder="备注">
+                </div>
+                <div class="form-group mb-2" style="margin-top: 15px;margin-right: 31px">
+                    <label for="ostatus" class="sr-only">ostatus</label>
+                    <select class="custom-select form-control" name="ostatus" id="ostatus" style="width: 195px">
+                        <option selected>工单状态 (请选择)</option>
+                        <option value="1">1 启用</option>
+                        <option value="0">0 停用</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2" style="margin-top: 15px;margin-right: 31px">
+                    <label for="is_up_db" class="sr-only">is_up_db</label>
+                    <select class="custom-select form-control" name="is_up_db" id="is_up_db" style="width: 195px">
+                        <option selected>是否更新db (请选择)</option>
+                        <option value="1">1 是</option>
+                        <option value="0">0 否</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-2" style="margin-right: 30px;margin-top: 15px">
+                    <label for="ops_id" class="sr-only">ops_id</label>
+                    <select class="custom-select form-control" name="ops_id" id="ops_id" style="width: 196px">
+                        <option selected>接单运维 (请选择)</option>
+                        {% for ops in ops_id_list %}
+                            <option value="{{ ops.0 }}">{{ ops.0 }}</option>
+                        {% empty %}
+                            <option value="=>请先添加运维成员<="> =>先添加运维成员<= </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group mb-2" style="margin-right: 30px;margin-top: 15px">
+                    <label for="order_u_id" class="sr-only">order_u_id</label>
+                    <select class="custom-select form-control" name="order_u_id" id="order_u_id" style="width: 196px">
+                        <option selected>提工单人 (请选择)</option>
+                        {% for ou in order_u_id_list %}
+                            <option value="{{ ou.0 }}">{{ ou.0 }}</option>
+                        {% empty %}
+                            <option value="=>请先添加用户<="> =>请先添加用户<= </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group mb-2" style="margin-top: 15px;margin-right: 30px">
+                    <label for="company_id" class="sr-only">company_id</label>
+                    <select class="custom-select form-control" name="company_id" id="company_id" style="width: 196px">
+                        <option selected>公司 (请选择)</option>
+                        {% for com in company_id_list %}
+                            <option value="{{ com.0 }}">{{ com.0 }}</option>
+                        {% empty %}
+                            <option value="=>请先创建公司<=">create company first!</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group mb-2" style="margin-right: 30px;margin-top: 15px">
+                    <label for="create_t" class="sr-only">create_t</label>
+                    <input type="datetime-local" value="2019-01-01T00:00:00" step="1" name="create_t" class="form-control" id="create_t" placeholder="创建时间">
+                </div>
+{#             value="2019-01-01T00:00"#}
+{#                <div class="form-group mb-2" style="margin-right: 30px;margin-top: 10px">#}
+{#                    <label for="end_t" class="sr-only">end_t</label>#}
+{#                    <input type="hidden" name="end_t" class="form-control" id="end_t" placeholder="完成时间">#}
+{#                </div>#}
+                <button type="submit" class="btn btn-success mb-2" style="width: 195px;margin-top: 15px;margin-left: 655px">新 建 工 单</button>
+            </form>
+        </div>
+        <div class="col-md-5" style="left: 350px;margin-top: 50px;width: 1500px">
+            <table class="table table-bordered table-striped" style="width: 1500px">
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>标题</th>
+                    <th>发版地址</th>
+                    <th>发版内容</th>
+                    <th>发版注意</th>
+                    <th>备注</th>
+                    <th>工单状态</th>
+                    <th>是否更db</th>
+                    <th>创建时间</th>
+                    <th>完成时间</th>
+                    <th>接单运维</th>
+                    <th>提工单人</th>
+                    <th>公司</th>
+                    <th style="text-align: center">操作功能</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for k,v in order_list.items %}
+                        <tr>
+                            <th scope="row">{{ v.0 }}</th>
+                            <td>{{ v.1 }}</td>
+                            <td>{{ v.2 }}</td>
+                            <td>{{ v.3 }}</td>
+                            <td>{{ v.4 }}</td>
+                            <td>{{ v.5 }}</td>
+                            <td>{{ v.6 }}</td>
+                            <td>{{ v.7 }}</td>
+                            <td>{{ v.8 | date:"Y-m-d H:i:s" }}</td>
+                            <td>{{ v.9 | date:"Y-m-d H:i:s" }}</td>
+                            <td>{{ v.10 }}</td>
+                            <td>{{ v.11 }}</td>
+                            <td>{{ v.12 }}</td>
+                            <td class="text-center">
+                                <a href="javascript:;" own-edit="{{ v.0 }}" own-count="{{ k }}" type="button"
+                                   class="btn btn-sm btn-success edit-c" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-pencil edi" aria-hidden="true"></span>编辑</a>
+                                &nbsp;&nbsp;
+                                <a href="javascript:;" own-del="{{ v.0 }}" type="button"
+                                   class="btn btn-sm btn-danger del-c" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除</a>
+                                {#                href="/delete_user/?user_id={{ user.0 }}" #}
+                            </td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="14" style="text-align: center">没有数据，欧耶~~~先《 添 加 》吧......</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+{#         页码#}
+            <div class="row">
+                <div class="col-md-7 col-xs-12 pull-right">
+                    <nav aria-label="...">
+                        <ul class=" pull-right pagination">
+                            <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+{#         页码#}
+        </div>
+
+    </div>
+</div>
+
+{#<script src="/static/js/jquery-3.1.1.js"></script>#}
+{#<script src="/static/bs/js/bootstrap.js"></script>#}
+
+{#<script type="text/javascript">#}
+{#    $('#create_t').setNow(true);#}
+{#    $("#create_t").val(new Date().toLocalString());#}
+{#</script>#}
+
+{#编辑操作开始#}
+<script type="text/javascript">
+    $(".edit-c").on("click",function () {   <!-- edit_begin -->
+        var bro = $(".edit-c").parent().siblings();
+        var o_num = $(this).attr('own-count');
+        var one = Number(o_num) + (Number(o_num) - 1) * 12;
+        var two = one + 1;
+        var three = two + 1;
+        var four = three + 1;
+        var five = four + 1;
+        var six = five + 1;
+        var seven = six + 1;
+        var eight = seven + 1;
+        var nine = eight + 1;
+        var ten = nine + 1;
+        var eleven = ten + 1;
+        var twelve = eleven + 1;
+        var edit_num = (Number(o_num) - 1) * 2;
+{#        alert($('.edit-c').attr('own-edit'));#}
+        $.each([one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve], function (index, value) {
+            bro[value].innerHTML = "<input type='text'class= 'c" + [value] + "'value = '" + bro[value].innerText + "' style='width: 120px' />" });
+        $(this).parent().children().removeClass("btn-success");
+        $(this).parent().children().removeClass("btn-danger");
+        $(".edit-c").parent().children()[edit_num+1].innerHTML = "";
+        $(".edit-c").parent().children()[edit_num].innerHTML = "<a type='button' href='javascript:;' own-edit='{{ v.0 }}' own-count='{{ k }}' class='btn btn-sm btn-success a-one' aria-label='Left Align' ><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span>保存</a> <a href='/order_list/' type='button' class='btn btn-sm btn-success' aria-label='Left Align' onclick='cancelEdit()'><span class='glyphicon glyphicon-remove-sign' aria-hidden='true'></span>取消</a>";
+
+        $(".a-one").on("click",function () {    <!-- edit_save_begin -->
+            var oid = $(".a-one").parent().attr("own-edit");
+            var title = $('.c'+one).val();
+            var addr = $('.c'+two).val();
+            var content = $('.c'+three).val();
+            var attention = $('.c'+four).val();
+            var remark = $('.c'+five).val();
+            var status = $('.c'+six).val();
+            var is_up_db = $('.c'+seven).val();
+            var create_ti = $('.c'+eight).val();
+            var end_ti = $('.c'+nine).val();
+            var ops_id = $('.c'+ten).val();
+            var order_u_id = $('.c'+eleven).val();
+            var company_name = $('.c'+twelve).val();
+            $.ajax({
+                url: "/edit_order/",
+                type: "POST",
+                data:{
+                    "oid":oid,
+                    "title":title,
+                    "addr":addr,
+                    "content":content,
+                    "attention":attention,
+                    "remark":remark,
+                    "status":status,
+                    "is_up_db":is_up_db,
+                    "create_ti":create_ti,
+                    "end_ti":end_ti,
+                    "ops_id":ops_id,
+                    "order_u_id":order_u_id,
+                    "company_name":company_name
+                },
+                cache: false,
+                dataType: "json",
+                success: function (data) {
+                    if (data.rey === "success"){
+                        location.reload();
+                    }
+                }
+            });
+        }); <!-- edit_save_end -->
+    }); <!-- edit_end -->
+</script>
+
+{#删除操作开始#}
+<script type="text/javascript">
+    $(".del-c").on("click",function () {
+        var de = window.confirm("确定删除吗？");
+        var oid = $(this).attr("own-del");
+        alert(oid);
+        if (de) {
+            $.ajax({
+                url: "/delete_order/",
+                type: "POST",
+                data: {"oid": oid},
+                cache: false,
+{#                contentType: 'application/json; charset=UTF-8',#}
+                dataType: "json",
+                success: function (data) {
+                    {#                var ret = JSON.parse(data);#}
+                    if (data.rey === "success") {
+                        location.reload();
+                    }
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6c2188e-0630-43f0-82da-ddd2dd7e1cea" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ops_deploy_api$test.coverage" NAME="test Coverage Results" MODIFIED="1550905384608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work_order" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work_order/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#2216#4944#0" expanded="false" />
+                <marker date="1552916363076" expanded="true" signature="254:276" ph="SELECT * fro... app01_userinfo" />
+                <marker date="1552916363076" expanded="true" signature="254:278" ph="SELECT * fro... app01_userinfo" />
+                <marker date="1552916363076" expanded="true" signature="303:325" ph="SELECT * fro... app01_userinfo" />
+                <marker date="1552916363076" expanded="true" signature="352:374" ph="SELECT * fro... app01_userinfo" />
+                <marker date="1552916363076" expanded="true" signature="961:1019" ph="select is_ad... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="1048:1104" ph="select is_ad... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="1390:1426" ph="select p fro... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="1742:1800" ph="select passw... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="2682:2713" ph="select * fro... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="2682:2736" ph="select * fro... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="2955:2988" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="2955:3008" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="3240:3270" ph="select * fro... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="3240:3292" ph="select * fro... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="3525:3576" ph="select group... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="3525:3578" ph="select group... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="3963:4120" ph="select * fro... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="3963:4132" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="3963:4134" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="4242:4315" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="4242:4317" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="4419:4468" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="4419:4470" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="5491:5545" ph="select * fro... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="5765:5818" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="6051:6103" ph="select * fro... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="6336:6387" ph="select group... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="6775:6944" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="7054:7127" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="7231:7280" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="7886:7938" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="8019:8185" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="8352:8400" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="8513:8586" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="8678:8727" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="9061:9113" ph="select id fr... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="9195:9361" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="9608:9656" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="9785:9858" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="9962:10011" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="10366:10418" ph="select id fr... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="10500:10666" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="10913:10961" ph="select name work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="11090:11163" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="11267:11316" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="11718:11752" ph="select * fro... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="11718:11770" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="11851:12017" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="12184:12232" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="12468:12541" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="12633:12682" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="12633:12684" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="13063:13115" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="13196:13362" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="13608:13656" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="13785:13858" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="13962:14011" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="14366:14418" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="14499:14665" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="14911:14959" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="15088:15161" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="15265:15314" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="15690:15847" ph="select id,ti... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="16142:16190" ph="select name work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="16227:16275" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="16539:16612" ph="select compa... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="16779:16828" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="16779:16830" ph="select c_nam... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="17581:17628" ph="select name work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="17581:17629" ph="select name work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="17668:17716" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="17668:17718" ph="select usern... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="18064:18079" ph="select id fr... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="18064:18098" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="18236:18266" ph="select id fr... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="18416:18449" ph="select id fr... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="19746:19956" ph="insert into work_order_workorder... " />
+                <marker date="1552916363076" expanded="true" signature="20095:20146" ph="select id fr... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="20095:20148" ph="select id fr... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="20095:20149" ph="select id fr... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="20313:20396" ph="insert into work_order_workorder_company... " />
+                <marker date="1552916363076" expanded="true" signature="20655:20717" ph="delete from " />
+                <marker date="1552916363076" expanded="true" signature="20655:20719" ph="delete from " />
+                <marker date="1552916363076" expanded="true" signature="20744:20788" ph="delete from " />
+                <marker date="1552916363076" expanded="true" signature="21823:21874" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="21823:21876" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="21823:21877" ph="select * fro... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="21988:22059" ph="select * fro... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="21988:22061" ph="select * fro... work_order_workorder_company" />
+                <marker date="1552916363076" expanded="true" signature="22175:22199" ph="select i fro... work_order_workorder" />
+                <marker date="1552916363076" expanded="true" signature="22175:22223" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="22175:22224" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="22175:22226" ph="select ops_i... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="22175:22227" ph="select id fr... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="22495:22543" ph="select ops_i... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="22495:22544" ph="select id fr... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="22495:22547" ph="select id fr... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="22790:23010" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="23313:23394" ph="select id,us... work_order_user" />
+                <marker date="1552916363076" expanded="true" signature="23616:23647" ph="select id fr... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="24421:24534" ph="insert into work_order_group... " />
+                <marker date="1552916363076" expanded="true" signature="25041:25160" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="25041:25162" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="25476:25515" ph="delete from " />
+                <marker date="1552916363076" expanded="true" signature="25959:26007" ph="select id,gr... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="26092:26129" ph="select count... work_order_group" />
+                <marker date="1552916363076" expanded="true" signature="26685:26747" ph="insert into work_order_group... " />
+                <marker date="1552916363076" expanded="true" signature="27054:27092" ph="delete from " />
+                <marker date="1552916363076" expanded="true" signature="27692:27760" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="28055:28109" ph="select id,c_... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="28196:28235" ph="select id fr... work_order_company" />
+                <marker date="1552916363076" expanded="true" signature="29541:29614" ph="insert into work_order_company... " />
+                <marker date="1552916363076" expanded="true" signature="29949:29989" ph="delete from " />
+                <marker date="1552916363076" expanded="true" signature="29949:29991" ph="delete from " />
+                <marker date="1552916363076" expanded="true" signature="30652:30689" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="30652:30723" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="30652:30731" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="31341:31391" ph="select ondut... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="31341:31393" ph="select ondut... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="31516:31564" ph="select * fro... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="31516:31566" ph="select * fro... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="31692:31745" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="31692:31747" ph="update work_... " />
+                <marker date="1552916363076" expanded="true" signature="31942:31992" ph="select ondut... work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="32121:32169" ph="select name work_order_operator" />
+                <marker date="1552916363076" expanded="true" signature="32302:32355" ph="update work_... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yes_order_sub.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/yes_order_sub.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5358">
+              <caret line="282" column="68" lean-forward="false" selection-start-line="282" selection-start-column="68" selection-end-line="282" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="no_order_sub.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/no_order_sub.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6175">
+              <caret line="325" column="27" lean-forward="false" selection-start-line="325" selection-start-column="27" selection-end-line="325" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yes_order_ops.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/yes_order_ops.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6232">
+              <caret line="328" column="132" lean-forward="false" selection-start-line="328" selection-start-column="132" selection-end-line="328" selection-end-column="132" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3648">
+              <caret line="192" column="79" lean-forward="false" selection-start-line="192" selection-start-column="79" selection-end-line="192" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ops_deploy_api/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/group_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3173">
+              <caret line="167" column="33" lean-forward="false" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+              <folding>
+                <marker date="1552892824308" expanded="false" signature="7159:7193" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>edit_num</find>
+      <find>c_name</find>
+      <find>ccode</find>
+      <find>group_list</find>
+      <find>cname</find>
+      <find>cid</find>
+      <find>company</find>
+      <find>u_num</find>
+      <find>c_num</find>
+      <find>username</find>
+      <find>password</find>
+      <find>content</find>
+      <find>nickname</find>
+      <find>mailbox</find>
+      <find>create_t</find>
+      <find>e</find>
+      <find>uname</find>
+      <find>ugroup</find>
+      <find>company_list</find>
+      <find>ustatus</find>
+      <find>status</find>
+      <find>u</find>
+      <find>v</find>
+      <find>index</find>
+      <find>ops_order</find>
+      <find>no_order_ops</find>
+      <find>ops</find>
+      <find>na_id</find>
+      <find>ops_order_</find>
+      <find>ops_name</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ino</replace>
+      <replace>info</replace>
+      <replace>company_list</replace>
+      <replace>company</replace>
+      <replace>c_name</replace>
+      <replace>gid</replace>
+      <replace>gname</replace>
+      <replace>gstatus</replace>
+      <replace>gcode</replace>
+      <replace>group_list</replace>
+      <replace>u_num</replace>
+      <replace>uid</replace>
+      <replace>user</replace>
+      <replace>address</replace>
+      <replace>content</replace>
+      <replace>attention</replace>
+      <replace>end_t</replace>
+      <replace>e</replace>
+      <replace>t</replace>
+      <replace>title</replace>
+      <replace>o</replace>
+      <replace>i</replace>
+      <replace>sub_order</replace>
+      <replace>yes_order_ops</replace>
+      <replace>sub</replace>
+      <replace>sub_order_</replace>
+      <replace>sub_name</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ops_deploy_api/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/common.css" />
+        <option value="$PROJECT_DIR$/work_order/static/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/templates/add_author.html" />
+        <option value="$PROJECT_DIR$/templates/add_book_old.html" />
+        <option value="$PROJECT_DIR$/templates/add_book.html" />
+        <option value="$PROJECT_DIR$/work_order/test.py" />
+        <option value="$PROJECT_DIR$/templates/ops_on.html" />
+        <option value="$PROJECT_DIR$/work_order/models.py" />
+        <option value="$PROJECT_DIR$/templates/order_list.html" />
+        <option value="$PROJECT_DIR$/ops_deploy_api/settings.py" />
+        <option value="$PROJECT_DIR$/templates/index2.html" />
+        <option value="$PROJECT_DIR$/templates/group_list.html" />
+        <option value="$PROJECT_DIR$/templates/no_order_ops.html" />
+        <option value="$PROJECT_DIR$/templates/user_list.html" />
+        <option value="$PROJECT_DIR$/templates/company_list.html" />
+        <option value="$PROJECT_DIR$/templates/ops_order.html" />
+        <option value="$PROJECT_DIR$/templates/sub_order.html" />
+        <option value="$PROJECT_DIR$/templates/yes_order_ops.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/ops_deploy_api/urls.py" />
+        <option value="$PROJECT_DIR$/templates/no_order_sub.html" />
+        <option value="$PROJECT_DIR$/templates/yes_order_sub.html" />
+        <option value="$PROJECT_DIR$/work_order/views.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="338" />
+    <option name="y" value="88" />
+    <option name="width" value="1386" />
+    <option name="height" value="937" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+              <item name="work_order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+              <item name="work_order" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+              <item name="work_order" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+              <item name="work_order" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bs" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ops_deploy_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ops_deploy_api" type="462c0819:PsiDirectoryNode" />
+              <item name="work_order" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysite" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PythonProject\ops_deploy_api\templates" />
+      <recent name="F:\PythonProject\ops_deploy_api\work_order\static\bs\css" />
+      <recent name="F:\PythonProject\ops_deploy_api\work_order\static" />
+      <recent name="F:\PythonProject\ops_deploy_api\work_order\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PythonProject\ops_deploy_api\work_order\static\fontawesome\css" />
+      <recent name="F:\PythonProject\ops_deploy_api\work_order\static\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.ops_deploy_api">
+    <configuration name="ops_deploy_api" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="ops_deploy_api.settings" />
+      </envs>
+      <option name="SDK_HOME" value="F:\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ops_deploy_api" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="192.168.20.159" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_order" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ops_deploy_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work_order/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Django server.ops_deploy_api" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6c2188e-0630-43f0-82da-ddd2dd7e1cea" name="Default" comment="" />
+      <created>1550225751437</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550225751437</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="338" y="88" width="1386" height="937" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12594269" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28914142" sideWeight="0.5026616" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45093167" sideWeight="0.4973384" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3242236" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ops_deploy_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#2216#4944#0" expanded="false" />
+            <marker date="1552916363076" expanded="true" signature="254:276" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="254:278" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="303:325" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="352:374" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="961:1019" ph="select is_ad... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="1048:1104" ph="select is_ad... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="1390:1426" ph="select p fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="1742:1800" ph="select passw... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="2682:2713" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="2682:2736" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="2955:2988" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="2955:3008" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="3240:3270" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="3240:3292" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="3525:3576" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="3525:3578" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="3963:4120" ph="select * fro... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="3963:4132" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="3963:4134" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="4242:4315" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="4242:4317" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="4419:4468" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="4419:4470" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="5491:5545" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="5765:5818" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="6051:6103" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="6336:6387" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="6775:6944" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="7054:7127" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="7231:7280" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="7886:7938" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="8019:8185" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="8352:8400" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="8513:8586" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="8678:8727" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="9061:9113" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="9195:9361" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="9608:9656" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="9785:9858" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="9962:10011" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="10366:10418" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="10500:10666" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="10913:10961" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11090:11163" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="11267:11316" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="11718:11752" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11718:11770" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11851:12017" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="12184:12232" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="12468:12541" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="12633:12682" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="12633:12684" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="13063:13115" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="13196:13362" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="13608:13656" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="13785:13858" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="13962:14011" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="14366:14418" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="14499:14665" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="14911:14959" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="15088:15161" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="15265:15314" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="15690:15847" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="16142:16190" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="16227:16275" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="16539:16612" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="16779:16828" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="16779:16830" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="17581:17628" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="17581:17629" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="17668:17716" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="17668:17718" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="18064:18079" ph="select id fr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="18064:18098" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="18236:18266" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="18416:18449" ph="select id fr... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="19746:19956" ph="insert into work_order_workorder... " />
+            <marker date="1552916363076" expanded="true" signature="20095:20146" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20095:20148" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20095:20149" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20313:20396" ph="insert into work_order_workorder_company... " />
+            <marker date="1552916363076" expanded="true" signature="20655:20717" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="20655:20719" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="20744:20788" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="21823:21874" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21823:21876" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21823:21877" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21988:22059" ph="select * fro... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="21988:22061" ph="select * fro... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="22175:22199" ph="select i fro... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="22175:22223" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22224" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22226" ph="select ops_i... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22227" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22495:22543" ph="select ops_i... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22495:22544" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="22495:22547" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="22790:23010" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="23313:23394" ph="select id,us... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="23616:23647" ph="select id fr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="24421:24534" ph="insert into work_order_group... " />
+            <marker date="1552916363076" expanded="true" signature="25041:25160" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="25041:25162" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="25476:25515" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="25959:26007" ph="select id,gr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="26092:26129" ph="select count... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="26685:26747" ph="insert into work_order_group... " />
+            <marker date="1552916363076" expanded="true" signature="27054:27092" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="27692:27760" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="28055:28109" ph="select id,c_... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="28196:28235" ph="select id fr... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="29541:29614" ph="insert into work_order_company... " />
+            <marker date="1552916363076" expanded="true" signature="29949:29989" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="29949:29991" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="30652:30689" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="30652:30723" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="30652:30731" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31341:31391" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31341:31393" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31516:31564" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31516:31566" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31692:31745" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31692:31747" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31942:31992" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="32121:32169" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="32302:32355" ph="update work_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1957">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/company_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5928">
+          <caret line="312" column="38" lean-forward="true" selection-start-line="312" selection-start-column="38" selection-end-line="312" selection-end-column="38" />
+          <folding>
+            <marker date="1552892824057" expanded="false" signature="7159:7193" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_deploy_api/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_deploy_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#2216#4944#0" expanded="false" />
+            <marker date="1552916363076" expanded="true" signature="254:276" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="254:278" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="303:325" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="352:374" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="961:1019" ph="select is_ad... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="1048:1104" ph="select is_ad... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="1390:1426" ph="select p fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="1742:1800" ph="select passw... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="2682:2713" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="2682:2736" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="2955:2988" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="2955:3008" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="3240:3270" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="3240:3292" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="3525:3576" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="3525:3578" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="3963:4120" ph="select * fro... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="3963:4132" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="3963:4134" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="4242:4315" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="4242:4317" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="4419:4468" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="4419:4470" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="5491:5545" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="5765:5818" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="6051:6103" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="6336:6387" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="6775:6944" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="7054:7127" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="7231:7280" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="7886:7938" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="8019:8185" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="8352:8400" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="8513:8586" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="8678:8727" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="9061:9113" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="9195:9361" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="9608:9656" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="9785:9858" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="9962:10011" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="10366:10418" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="10500:10666" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="10913:10961" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11090:11163" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="11267:11316" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="11718:11752" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11718:11770" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11851:12017" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="12184:12232" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="12468:12541" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="12633:12682" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="12633:12684" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="13063:13115" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="13196:13362" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="13608:13656" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="13785:13858" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="13962:14011" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="14366:14418" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="14499:14665" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="14911:14959" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="15088:15161" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="15265:15314" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="15690:15847" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="16142:16190" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="16227:16275" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="16539:16612" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="16779:16828" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="16779:16830" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="17581:17628" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="17581:17629" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="17668:17716" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="17668:17718" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="18064:18079" ph="select id fr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="18064:18098" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="18236:18266" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="18416:18449" ph="select id fr... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="19746:19956" ph="insert into work_order_workorder... " />
+            <marker date="1552916363076" expanded="true" signature="20095:20146" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20095:20148" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20095:20149" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20313:20396" ph="insert into work_order_workorder_company... " />
+            <marker date="1552916363076" expanded="true" signature="20655:20717" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="20655:20719" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="20744:20788" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="21823:21874" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21823:21876" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21823:21877" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21988:22059" ph="select * fro... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="21988:22061" ph="select * fro... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="22175:22199" ph="select i fro... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="22175:22223" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22224" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22226" ph="select ops_i... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22227" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22495:22543" ph="select ops_i... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22495:22544" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="22495:22547" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="22790:23010" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="23313:23394" ph="select id,us... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="23616:23647" ph="select id fr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="24421:24534" ph="insert into work_order_group... " />
+            <marker date="1552916363076" expanded="true" signature="25041:25160" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="25041:25162" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="25476:25515" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="25959:26007" ph="select id,gr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="26092:26129" ph="select count... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="26685:26747" ph="insert into work_order_group... " />
+            <marker date="1552916363076" expanded="true" signature="27054:27092" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="27692:27760" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="28055:28109" ph="select id,c_... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="28196:28235" ph="select id fr... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="29541:29614" ph="insert into work_order_company... " />
+            <marker date="1552916363076" expanded="true" signature="29949:29989" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="29949:29991" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="30652:30689" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="30652:30723" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="30652:30731" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31341:31391" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31341:31393" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31516:31564" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31516:31566" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31692:31745" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31692:31747" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31942:31992" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="32121:32169" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="32302:32355" ph="update work_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1957">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/company_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5814">
+          <caret line="306" column="21" lean-forward="false" selection-start-line="306" selection-start-column="21" selection-end-line="306" selection-end-column="21" />
+          <folding>
+            <marker date="1552892824057" expanded="false" signature="7159:7193" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/bs/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/js/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/bs/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="30837" lean-forward="false" selection-start-line="3" selection-start-column="30837" selection-end-line="3" selection-end-column="30837" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/fontawesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/bs/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_deploy_api/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="135" column="43" lean-forward="false" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/django/db/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_deploy_api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/static/js/jquery-3.1.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="155" column="4" lean-forward="false" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ops_on.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="998">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_book_old.html" />
+    <entry file="file://$PROJECT_DIR$/templates/add_author.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="69" lean-forward="true" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/edit_book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/order_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="344" column="0" lean-forward="false" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+          <folding>
+            <element signature="e#19764#19770#0#HTML" expanded="true" />
+            <element signature="e#19770#19776#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_deploy_api/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2183">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="190" column="31" lean-forward="true" selection-start-line="190" selection-start-column="31" selection-end-line="190" selection-end-column="69" />
+          <folding>
+            <element signature="e#14614#14618#0#HTML" expanded="true" />
+            <element signature="e#14622#14626#0#HTML" expanded="true" />
+            <element signature="e#14803#14810#1#HTML" expanded="true" />
+            <element signature="e#15183#15189#0#HTML" expanded="true" />
+            <element signature="e#15565#15571#0#HTML" expanded="true" />
+            <element signature="e#15571#15577#0#HTML" expanded="true" />
+            <element signature="e#15581#15587#0#HTML" expanded="true" />
+            <element signature="e#15963#15969#0#HTML" expanded="true" />
+            <element signature="e#15969#15975#0#HTML" expanded="true" />
+            <element signature="e#15979#15985#0#HTML" expanded="true" />
+            <element signature="e#16361#16367#0#HTML" expanded="true" />
+            <element signature="e#16367#16373#0#HTML" expanded="true" />
+            <element signature="e#16377#16383#0#HTML" expanded="true" />
+            <element signature="e#17019#17025#0#HTML" expanded="true" />
+            <element signature="e#17025#17031#0#HTML" expanded="true" />
+            <element signature="e#17034#17040#0#HTML" expanded="true" />
+            <element signature="e#17416#17422#0#HTML" expanded="true" />
+            <element signature="e#17422#17428#0#HTML" expanded="true" />
+            <element signature="e#17431#17437#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="151" column="89" lean-forward="false" selection-start-line="151" selection-start-column="89" selection-end-line="151" selection-end-column="89" />
+          <folding>
+            <marker date="1552892824394" expanded="false" signature="5071:5105" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/company_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="203" column="63" lean-forward="true" selection-start-line="203" selection-start-column="63" selection-end-line="203" selection-end-column="63" />
+          <folding>
+            <marker date="1552892824057" expanded="false" signature="7159:7193" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ops_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="191" column="112" lean-forward="true" selection-start-line="191" selection-start-column="112" selection-end-line="191" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sub_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1937">
+          <caret line="198" column="44" lean-forward="true" selection-start-line="198" selection-start-column="44" selection-end-line="198" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/yes_order_ops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6232">
+          <caret line="328" column="132" lean-forward="false" selection-start-line="328" selection-start-column="132" selection-end-line="328" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/no_order_ops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="211" column="33" lean-forward="true" selection-start-line="211" selection-start-column="33" selection-end-line="211" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/group_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3173">
+          <caret line="167" column="33" lean-forward="false" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+          <folding>
+            <marker date="1552892824308" expanded="false" signature="7159:7193" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_deploy_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3648">
+          <caret line="192" column="79" lean-forward="false" selection-start-line="192" selection-start-column="79" selection-end-line="192" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/no_order_sub.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6175">
+          <caret line="325" column="27" lean-forward="false" selection-start-line="325" selection-start-column="27" selection-end-line="325" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/yes_order_sub.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5358">
+          <caret line="282" column="68" lean-forward="false" selection-start-line="282" selection-start-column="68" selection-end-line="282" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work_order/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#2216#4944#0" expanded="false" />
+            <marker date="1552916363076" expanded="true" signature="254:276" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="254:278" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="303:325" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="352:374" ph="SELECT * fro... app01_userinfo" />
+            <marker date="1552916363076" expanded="true" signature="961:1019" ph="select is_ad... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="1048:1104" ph="select is_ad... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="1390:1426" ph="select p fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="1742:1800" ph="select passw... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="2682:2713" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="2682:2736" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="2955:2988" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="2955:3008" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="3240:3270" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="3240:3292" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="3525:3576" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="3525:3578" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="3963:4120" ph="select * fro... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="3963:4132" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="3963:4134" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="4242:4315" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="4242:4317" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="4419:4468" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="4419:4470" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="5491:5545" ph="select * fro... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="5765:5818" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="6051:6103" ph="select * fro... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="6336:6387" ph="select group... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="6775:6944" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="7054:7127" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="7231:7280" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="7886:7938" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="8019:8185" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="8352:8400" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="8513:8586" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="8678:8727" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="9061:9113" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="9195:9361" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="9608:9656" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="9785:9858" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="9962:10011" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="10366:10418" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="10500:10666" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="10913:10961" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11090:11163" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="11267:11316" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="11718:11752" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11718:11770" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="11851:12017" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="12184:12232" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="12468:12541" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="12633:12682" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="12633:12684" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="13063:13115" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="13196:13362" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="13608:13656" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="13785:13858" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="13962:14011" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="14366:14418" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="14499:14665" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="14911:14959" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="15088:15161" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="15265:15314" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="15690:15847" ph="select id,ti... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="16142:16190" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="16227:16275" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="16539:16612" ph="select compa... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="16779:16828" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="16779:16830" ph="select c_nam... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="17581:17628" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="17581:17629" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="17668:17716" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="17668:17718" ph="select usern... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="18064:18079" ph="select id fr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="18064:18098" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="18236:18266" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="18416:18449" ph="select id fr... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="19746:19956" ph="insert into work_order_workorder... " />
+            <marker date="1552916363076" expanded="true" signature="20095:20146" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20095:20148" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20095:20149" ph="select id fr... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="20313:20396" ph="insert into work_order_workorder_company... " />
+            <marker date="1552916363076" expanded="true" signature="20655:20717" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="20655:20719" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="20744:20788" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="21823:21874" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21823:21876" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21823:21877" ph="select * fro... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="21988:22059" ph="select * fro... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="21988:22061" ph="select * fro... work_order_workorder_company" />
+            <marker date="1552916363076" expanded="true" signature="22175:22199" ph="select i fro... work_order_workorder" />
+            <marker date="1552916363076" expanded="true" signature="22175:22223" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22224" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22226" ph="select ops_i... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22175:22227" ph="select id fr... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22495:22543" ph="select ops_i... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="22495:22544" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="22495:22547" ph="select id fr... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="22790:23010" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="23313:23394" ph="select id,us... work_order_user" />
+            <marker date="1552916363076" expanded="true" signature="23616:23647" ph="select id fr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="24421:24534" ph="insert into work_order_group... " />
+            <marker date="1552916363076" expanded="true" signature="25041:25160" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="25041:25162" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="25476:25515" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="25959:26007" ph="select id,gr... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="26092:26129" ph="select count... work_order_group" />
+            <marker date="1552916363076" expanded="true" signature="26685:26747" ph="insert into work_order_group... " />
+            <marker date="1552916363076" expanded="true" signature="27054:27092" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="27692:27760" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="28055:28109" ph="select id,c_... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="28196:28235" ph="select id fr... work_order_company" />
+            <marker date="1552916363076" expanded="true" signature="29541:29614" ph="insert into work_order_company... " />
+            <marker date="1552916363076" expanded="true" signature="29949:29989" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="29949:29991" ph="delete from " />
+            <marker date="1552916363076" expanded="true" signature="30652:30689" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="30652:30723" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="30652:30731" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31341:31391" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31341:31393" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31516:31564" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31516:31566" ph="select * fro... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="31692:31745" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31692:31747" ph="update work_... " />
+            <marker date="1552916363076" expanded="true" signature="31942:31992" ph="select ondut... work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="32121:32169" ph="select name work_order_operator" />
+            <marker date="1552916363076" expanded="true" signature="32302:32355" ph="update work_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
